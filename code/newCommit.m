@@ -8,9 +8,9 @@ end
 
 if ~exist('model')
     %Load model:
-    model = importModel('../ModelFiles/xml/papla-GEM.xml');
+    model = importModel('../ModelFiles/xml/lista-GEM.xml');
 end
 
 %Save model
-exportForGit(model,'papla-GEM','../',{'txt', 'xml', 'yml'});
+exportForGit(model,'lista-GEM','../',{'txt', 'xml', 'yml'});
 end

@@ -1,11 +1,11 @@
-%% PROTOCOL FOR THE RECONSTRUCTION OF A Papiliotrema laurentii GENOME SCALE MODEL USING THE RAVEN TOOLBOX
-%  AUTHORS: Rafaela Z. Ventorim, Mauricio A. M. Ferreira, Eduard J. Kerkhoven, Wendel B. da Silveira
+%% PROTOCOL FOR THE RECONSTRUCTION OF A Lipomyces starkeyi GENOME SCALE MODEL USING THE RAVEN TOOLBOX
+%  AUTHORS: Eduardo L. M. Almdeida; Maurício A. M. Ferreira
 %
 % Complementary to the manuscript, where more detailed descriptions are provided. 
 %
 % This protocol was prepared based on the reconstruction protocols and scripts developed for
-% Rhodotorula toruloides and Hansenula polymorpha, both available on GitHub:
-% https://github.com/SysBioChalmers/rhto-GEM and https://github.com/SysBioChalmers/hanpo-GEM.
+% Rhodotorula toruloides and Yarrowia lipolytica  both available on GitHub:
+% https://github.com/SysBioChalmers/rhto-GEM and https://github.com/SysBioChalmers/Yarrowia_lipolytica_W29-GEM.
 %
 % Define paths for the folders containing the files needed or generated during
 % the model reconstruction. Run this script every time you start a new MATLAB
@@ -20,10 +20,10 @@ cd(code)
 
 
 %% IMPORT TEMPLATE MODEL
-% Load R.toruloides template GEM using importModel()
-% Source: https://github.com/SysBioChalmers/rhto-GEM
-modelRhto = importModel([data 'templateModels/rhto.xml'], true);
-modelRhto.id = 'rhto';
+% Load Y. lipolytica template GEM using importModel()
+% Source: https://github.com/SysBioChalmers/Yarrowia_lipolytica_W29-GEM
+modeliYali = importModel([data 'templateModels/iYali.xml'], true);
+modeliYali.id = 'iYali';
 
 % If one wants to evaluate what the model contains, it can be easier to
 % browse through it as an Excel sheet. During the reconstruction we
@@ -31,10 +31,10 @@ modelRhto.id = 'rhto';
 % and track, but just make temporarily. We can write these to a 'scrap'
 % folder that will not be tracked on GitHub.
 mkdir([root 'scrap'])
-exportToExcelFormat(modelRhto, [root 'scrap/rhto.xlsx']);
+exportToExcelFormat(modeliYali, [root 'scrap/iYali.xlsx']);
 
 %{
-Note that RAVEN is used to write rhto-GEM in its repository, so there is
+Note that RAVEN is used to write iYali in its repository, so there is
 no redundant indication of compartments in the metabolite IDs that we
 otherwise would have wanted to clear out.
 %}

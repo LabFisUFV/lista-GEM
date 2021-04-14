@@ -49,16 +49,16 @@ save([root 'scrap/importModel.mat'])
 % MATCH PROTEIN FASTA IDs
 % DETERMINE HOMOLOGY by BLAST 
 
-% BLAST the whole-genome protein FASTA of P. laurentii against the
-% R. toruloides protein FASTA. This can take some minutes.
-blastRhto = getBlast('papla',[data '/genomes/Papla_protein.fasta'], ...
-            'rhto',[data '/genomes/rhto_np11.faa']);
+% BLAST the whole-genome protein FASTA of L. starkeyi against the
+% Y. lipolytica protein FASTA. This can take some minutes.
+blastiYali = getBlast('lista',[data '/genomes/lista.fasta'], ...
+            'iYali',[data '/genomes/iYali.faa']);
  
 % Save intermediate files in 'scrap' folder that is not tracked by Git
 save([root '/scrap/blastStruct.mat'],'blast*');
 
 % The blast results are then used to generate a new draft model.
-model=getModelFromHomology(modelRhto,blastRhto,'papla',{},1,false,10^-20,150,35);
+model=getModelFromHomology(modeliYali,blastiYali,'lista',{},1,false,10^-20,150,35);
 
 save([root '/scrap/model_r1.mat'],'model');
 %load([root 'scrap/model_r1.mat'])
@@ -69,7 +69,7 @@ disp(['Number of genes / rxns / mets in model:  ' ...
     num2str(length(model.mets))])
 
 % To inspect the first draft model:
-exportToExcelFormat(model,[root '/scrap/r1_paplaGEM.xlsx']);
+exportToExcelFormat(model,[root '/scrap/r1_listaGEM.xlsx']);
 
 % Add exchange reactions for media components
 mediumComps = {'r_1654', 'r_1672', 'r_1808', 'r_1832', 'r_1861', ...

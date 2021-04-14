@@ -1,6 +1,6 @@
 function newRelease(bumpType)
 % newRelease
-%   Prepares a new release of the papla-GEM model, for direct submission to
+%   Prepares a new release of the lista-GEM model, for direct submission to
 %   GitHub. This function should be run from the ComplementaryScripts
 %   directory.
 %
@@ -18,7 +18,7 @@ if ~strcmp(currentBranch,'master')
 end
 
 %Bump version number:
-oldModel   = load('../ModelFiles/mat/papla-GEM.mat');
+oldModel   = load('../ModelFiles/mat/lista-GEM.mat');
 oldVersion = oldModel.model.description;
 oldVersion = oldVersion(strfind(oldVersion,'_v')+2:end);
 oldVersion = str2double(strsplit(oldVersion,'.'));
@@ -42,18 +42,18 @@ newVersion = num2str(newVersion,'%d.%d.%d');
 fid     = fopen('../history.md','r');
 history = fscanf(fid,'%s');
 fclose(fid);
-if ~contains(history,['papla-GEMv' newVersion ':'])
+if ~contains(history,['lista-GEMv' newVersion ':'])
     error('ERROR: update history.md first')
 end
 
 %Load model:
-model = importModel('../ModelFiles/xml/papla-GEM.xml');
+model = importModel('../ModelFiles/xml/lista-GEM.xml');
 
 %Include tag and save model:
-model.description = ['Hansenula polymorpha-GEM_v' newVersion];
+model.description = ['Lipomyces starkeyi-GEM_v' newVersion];
 
 %Save model
-exportForGit(model,'papla-GEM','..',{'mat', 'txt', 'xlsx', 'xml', 'yml'});
+exportForGit(model,'lista-GEM','..',{'mat', 'txt', 'xlsx', 'xml', 'yml'});
 
 %Update version file:
 fid = fopen('../version.txt','wt');

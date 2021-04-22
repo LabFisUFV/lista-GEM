@@ -1,8 +1,1 @@
-# GEM-Lipomyces
-
-
-**Steps:**
-
-* Collect available genomes of *Lipomyces*
-* Check annotations
-* 
+Genome-scale metabolic rconstruction of *Lipomyces starkeyi*.

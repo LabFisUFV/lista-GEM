@@ -1,75 +1,75 @@
 metabolite,metID,pseudoreaction,coeff
-dAMP,s_0584,DNA,-0.000852123
-dCMP,s_0589,DNA,-0.000790704
-dGMP,s_0615,DNA,-0.000893661
-dTMP,s_0649,DNA,-0.000828968
-DNA,s_3720,DNA,1
-AMP,s_0423,RNA,-0.009275877
-CMP,s_0526,RNA,-0.009241436
-GMP,s_0782,RNA,-0.009271251
-UMP,s_1545,RNA,-0.009265825
-RNA,s_3719,RNA,1
-tRNA(Ala),s_1582,AA,0.016953081
-tRNA(Arg),s_1583,AA,0.016286137
-tRNA(Asn),s_1585,AA,0.01352778
-tRNA(Asp),s_1587,AA,0.015816794
-tRNA(Cys),s_1589,AA,0.006170442
-tRNA(Gln),s_1590,AA,0.014565105
-tRNA(Glu),s_1591,AA,0.015736528
-tRNA(Gly),s_1593,AA,0.016595271
-tRNA(His),s_1594,AA,0.011770645
-tRNA(Ile),s_1596,AA,0.0151102
-tRNA(Leu),s_1598,AA,0.016740329
-tRNA(Lys),s_1600,AA,0.014809125
-tRNA(Met),s_1602,AA,0.011557893
-tRNA(Phe),s_1604,AA,0.013636089
-tRNA(Pro),s_1606,AA,0.015929939
-tRNA(Ser),s_1607,AA,0.016667478
-tRNA(Thr),s_1608,AA,0.01612625
-tRNA(Trp),s_1610,AA,0.00864384
-tRNA(Tyr),s_1612,AA,0.011903131
-tRNA(Val),s_1614,AA,0.016345449
-Ala-tRNA(Ala),s_0404,AA,-0.016953081
-Arg-tRNA(Arg),s_0428,AA,-0.016286137
-Asn-tRNA(Asn),s_0430,AA,-0.01352778
-Asp-tRNA(Asp),s_0432,AA,-0.015816794
-Cys-tRNA(Cys),s_0542,AA,-0.006170442
-Gln-tRNA(Gln),s_0747,AA,-0.014565105
-Glu-tRNA(Glu),s_0748,AA,-0.015736528
-Gly-tRNA(Gly),s_0757,AA,-0.016595271
-His-tRNA(His),s_0832,AA,-0.011770645
-Ile-tRNA(Ile),s_0847,AA,-0.0151102
-Leu-tRNA(Leu),s_1077,AA,-0.016740329
-Lys-tRNA(Lys),s_1099,AA,-0.014809125
-Met-tRNA(Met),s_1148,AA,-0.011557893
-Phe-tRNA(Phe),s_1314,AA,-0.013636089
-Pro-tRNA(Pro),s_1379,AA,-0.015929939
-Ser-tRNA(Ser),s_1428,AA,-0.016667478
-Thr-tRNA(Thr),s_1491,AA,-0.01612625
-Trp-tRNA(Trp),s_1527,AA,-0.00864384
-Tyr-tRNA(Tyr),s_1533,AA,-0.011903131
-Val-tRNA(Val),s_1561,AA,-0.016345449
-protein,s_3717,AA,1
-phosphatidyl-L-serine backbone,s_3710,backbone,-0.004838400
-phosphatidylethanolamine backbone,s_1351,backbone,-0.015120000
-1-phosphatidyl-1D-myo-inositol backbone,s_0089,backbone,-0.012571200
-phosphatidylcholine backbone,s_1346,backbone,-0.034603200
-triglyceride backbone,s_1524,backbone,-0.067435200
-ergosterol,s_0666,backbone,-0.027864000
-fatty acid backbone,s_0694,backbone,-0.21280320
-cardiolipin,s_3738,backbone,-0.009115200
-1-monoglyceride backbone,m_0100,backbone,0
-diglyceride backbone,s_0620,backbone,0
-phosphatidylglycerol backbone,s_3736,backbone,0
-lipid backbone,s_3746,backbone,1
-C16:0 chain,s_3740,chain,-0.118701884
-C18:0 chain,s_3742,chain,-0.024647929
-C18:1 chain,s_3743,chain,-0.139373633
-C18:2 chain,m_0102,chain,-0.173577257
-lipid chain,s_3747,chain,1
-glycogen,s_0773,carbohydrate,-1.251498621
-mannan,s_1107,carbohydrate,-0.156610951
-trehalose,s_1520,carbohydrate,-0.542006528
-(1->3)-beta-D-glucan,s_0001,carbohydrate,-0.225295809
-(1->6)-beta-D-glucan,s_0004,carbohydrate,-0.225295809
-carbohydrate,s_3718,carbohydrate,1
+dAMP,s_0584,DNA,-0.003242235
+dCMP,s_0589,DNA,-0.002875189
+dGMP,s_0615,DNA,-0.002875189
+dTMP,s_0649,DNA,-0.003242235
+DNA,s_3720,DNA,1.000000000
+AMP,s_0423,RNA,-0.010401197
+CMP,s_0526,RNA,-0.010349055
+GMP,s_0782,RNA,-0.010388010
+UMP,s_1545,RNA,-0.010397794
+RNA,s_3719,RNA,1.000000000
+tRNA(Ala),s_1582,AA,0.104143778
+tRNA(Arg),s_1583,AA,0.101746843
+tRNA(Asn),s_1585,AA,0.096820597
+tRNA(Asp),s_1587,AA,0.100472732
+tRNA(Cys),s_1589,AA,0.054971141
+tRNA(Gln),s_1590,AA,0.094792420
+tRNA(Glu),s_1591,AA,0.100886404
+tRNA(Gly),s_1593,AA,0.102132149
+tRNA(His),s_1594,AA,0.079753659
+tRNA(Ile),s_1596,AA,0.101415905
+tRNA(Leu),s_1598,AA,0.104434531
+tRNA(Lys),s_1600,AA,0.098219991
+tRNA(Met),s_1602,AA,0.083866743
+tRNA(Phe),s_1604,AA,0.095288827
+tRNA(Pro),s_1606,AA,0.098385460
+tRNA(Ser),s_1607,AA,0.103999584
+tRNA(Thr),s_1608,AA,0.101834305
+tRNA(Trp),s_1610,AA,0.058942395
+tRNA(Tyr),s_1612,AA,0.089851991
+tRNA(Val),s_1614,AA,0.103347164
+Ala-tRNA(Ala),s_0404,AA,-0.104143778
+Arg-tRNA(Arg),s_0428,AA,-0.101746843
+Asn-tRNA(Asn),s_0430,AA,-0.096820597
+Asp-tRNA(Asp),s_0432,AA,-0.100472732
+Cys-tRNA(Cys),s_0542,AA,-0.054971141
+Gln-tRNA(Gln),s_0747,AA,-0.094792420
+Glu-tRNA(Glu),s_0748,AA,-0.100886404
+Gly-tRNA(Gly),s_0757,AA,-0.102132149
+His-tRNA(His),s_0832,AA,-0.079753659
+Ile-tRNA(Ile),s_0847,AA,-0.101415905
+Leu-tRNA(Leu),s_1077,AA,-0.104434531
+Lys-tRNA(Lys),s_1099,AA,-0.098219991
+Met-tRNA(Met),s_1148,AA,-0.083866743
+Phe-tRNA(Phe),s_1314,AA,-0.095288827
+Pro-tRNA(Pro),s_1379,AA,-0.098385460
+Ser-tRNA(Ser),s_1428,AA,-0.103999584
+Thr-tRNA(Thr),s_1491,AA,-0.101834305
+Trp-tRNA(Trp),s_1527,AA,-0.058942395
+Tyr-tRNA(Tyr),s_1533,AA,-0.089851991
+Val-tRNA(Val),s_1561,AA,-0.103347164
+protein,s_3717,AA,1.000000000
+phosphatidyl-L-serine backbone,s_3710,backbone,-0.000484959
+phosphatidylethanolamine backbone,s_1351,backbone,-0.006903534
+1-phosphatidyl-1D-myo-inositol backbone,s_0089,backbone,-0.003052389
+phosphatidylcholine backbone,s_1346,backbone,-0.016345971
+phosphatidylglycerol backbone,s_3736,backbone,-0.000057054
+triglyceride backbone,s_1524,backbone,-0.169106000
+diglyceride backbone,s_3733,backbone,-0.017990000
+ergosterol,s_0666,backbone,-0.002570000
+fatty acid backbone,s_0694,backbone,-0.007710000
+lipid backbone,s_3746,backbone,1.000000000
+C16:0 chain,s_3740,chain,-0.104497722
+C16:1 chain,s_3741,chain,-0.009952164
+C18:0 chain,s_3742,chain,-0.010830296
+C18:1 chain,s_3743,chain,-0.126158314
+C18:2 chain,m_0102,chain,-0.004976082
+C18:3 chain,m_0103,chain,-0.000585421
+lipid chain,s_3747,chain,1.000000000
+glycogen,s_0773,carbohydrate,-0.290938382
+mannan,s_1107,carbohydrate,-0.690744030
+trehalose,s_1520,carbohydrate,-0.117168416
+(1->3)-beta-D-glucan,s_0001,carbohydrate,-0.728284466
+(1->6)-beta-D-glucan,s_0004,carbohydrate,-0.243262028
+carbohydrate,s_3718,carbohydrate,1.000000000

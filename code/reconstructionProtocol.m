@@ -309,7 +309,7 @@ equations.stoichCoeffs  = BM.coeff(indexes);
 model = changeRxns(model, 'r_4065', equations, 1);
 
 save([root 'scrap/model_r4.mat'])
-% load([root 'scrap/biomass.mat'])
+% load([root 'scrap/model_r4.mat'])
 clear indexes equations loadedData fid BM biomassRxns ans
 
 disp(['Number of genes / rxns / mets in model:  ' ...
@@ -319,3 +319,59 @@ disp(['Number of genes / rxns / mets in model:  ' ...
 
 % Extport to inspect:
 exportToExcelFormat(model, [root 'scrap/model_r4.xlsx']);
+
+%% %% 5
+% Gap-filling
+
+% Use biomass production as obj func for gapfilling
+model = setParam(model, 'obj', 'r_4041', 1);
+
+% Set biomass production to arbitrary low flux, to force gap-filling to
+% produce biomass.
+model = setParam(model, 'lb', 'r_4041', 0.01);
+
+% Set glycose uptake at a higher value, to make sure that fluxes are high
+% enough during gap-filling that they won't be ignored due to the tolerance
+% of the MILP solver
+model = setParam(model, 'lb', 'r_1714', -1);
+
+% From the Rhto model, remove all exchange reactions (the
+% necessary ones we already added, don't want to add new ones)
+modelRhto2 = removeReactions(modelRhto, getExchangeRxns(modelRhto, 'both'), true, true, true);
+
+% From the Yli model, remove all exchange reactions (the
+% necessary ones we already added, don't want to add new ones)
+modelYli2 = removeReactions(modelYli, getExchangeRxns(modelYli, 'both'), true, true, true);
+
+% Run fillGaps function
+[~, ~, addedRxns, model] = fillGaps(model, {modelRhto2, modelYli2}, false, true);
+
+% Verify that model can now grow
+sol = solveLP(model, 1)
+printFluxes(model, sol.x, true)
+
+cd([code 'lipidMetabolism'])
+model = scaleLipids(model, 'tails');
+cd(code)
+
+% Verify the change of fluxes in the model after lipid scaling
+sol = solveLP(model, 1)
+printFluxes(model, sol.x)
+
+% Set maximum uptake of carbon source back to 1 mmol/gDCW*hr
+model = setParam(model, 'lb', 'r_1714', -1);
+model = setParam(model, 'lb', 'r_4041', 0);
+model = deleteUnusedGenes(model);
+
+save([root '/scrap/model_r5.mat'],'model');
+% load([root 'scrap/model_r5.mat'])
+
+disp(['Number of genes / rxns / mets in model:  ' ...
+    num2str(length(model.genes)) ' / ' ...
+    num2str(length(model.rxns)) ' / ' ...
+    num2str(length(model.mets))])
+
+% Export to Excel format for easy inspection
+exportToExcelFormat(model,[root '/scrap/r5_model.xlsx']);
+
+clear addedRxns rxns sol biomassRxns

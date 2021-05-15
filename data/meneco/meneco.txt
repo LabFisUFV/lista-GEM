@@ -1,0 +1,437 @@
+Reading draft network from r4_preMeneco.xml
+Reading seeds from menecoSeeds.sbml
+Reading targets from menecoTargets.sbml
+
+Checking draftnet for unproducible targets
+55 unproducible targets:
+M_s_3741
+M_s_1077
+M_m_0102
+M_s_3740
+M_s_0526
+M_s_3747
+M_s_0404
+M_s_1545
+M_s_3719
+M_s_1428
+M_s_0782
+M_s_1096
+M_s_1491
+M_s_0615
+M_s_0542
+M_s_0757
+M_s_3710
+M_s_0428
+M_s_3720
+M_s_3718
+M_m_0103
+M_s_0847
+M_s_3714
+M_s_1561
+M_s_1405
+M_s_1351
+M_s_1533
+M_s_3743
+M_s_1099
+M_s_0747
+M_s_1346
+M_s_1527
+M_s_1520
+M_s_0694
+M_s_0430
+M_s_1314
+M_s_3717
+M_s_0432
+M_s_0089
+M_s_0748
+M_s_3742
+M_s_0773
+M_s_3746
+M_s_3736
+M_s_0004
+M_s_1379
+M_s_1107
+M_s_0666
+M_s_0589
+M_s_0001
+M_s_0832
+M_s_1148
+M_s_1524
+M_s_3733
+M_s_0649
+
+Reading repair network from rhtoRepair.xml
+done
+
+Checking draftnet + repairnet for unproducible targets
+  still 5 unproducible targets:
+M_s_3746
+M_s_3736
+M_s_1107
+M_s_3718
+M_s_1096
+
+ 50 targets to reconstruct:
+M_s_3741
+M_s_1077
+M_s_3740
+M_m_0102
+M_s_0526
+M_s_3747
+M_s_0404
+M_s_1545
+M_s_3719
+M_s_1428
+M_s_0782
+M_s_1491
+M_s_0615
+M_s_0542
+M_s_0757
+M_s_3710
+M_s_0428
+M_s_3720
+M_m_0103
+M_s_0847
+M_s_3714
+M_s_1561
+M_s_1405
+M_s_1351
+M_s_1533
+M_s_3743
+M_s_1099
+M_s_0747
+M_s_1346
+M_s_1527
+M_s_1520
+M_s_0694
+M_s_0430
+M_s_1314
+M_s_3717
+M_s_0432
+M_s_0089
+M_s_0748
+M_s_3742
+M_s_0773
+M_s_0004
+M_s_1379
+M_s_0666
+M_s_0589
+M_s_0001
+M_s_0832
+M_s_1148
+M_s_1524
+M_s_3733
+M_s_0649
+
+Computing essential reactions for M_s_3741
+ 1 essential reactions found:
+R_r_1667
+
+Computing essential reactions for M_s_1077
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_3740
+ 1 essential reactions found:
+R_r_1667
+
+Computing essential reactions for M_m_0102
+ 1 essential reactions found:
+R_r_1667
+
+Computing essential reactions for M_s_0526
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_3747
+ 2 essential reactions found:
+R_t_0077
+R_r_1667
+
+Computing essential reactions for M_s_0404
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_1545
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_3719
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_1428
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_0782
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_1491
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_0615
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_0542
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_0757
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_3710
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_0428
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_3720
+ 4 essential reactions found:
+R_r_0893
+R_r_0800
+R_r_0067
+R_r_1667
+
+Computing essential reactions for M_m_0103
+ 2 essential reactions found:
+R_t_0077
+R_r_1667
+
+Computing essential reactions for M_s_0847
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_3714
+ 4 essential reactions found:
+R_r_0942
+R_r_1083
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_1561
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_1405
+ 4 essential reactions found:
+R_r_2030
+R_r_0800
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_1351
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_1533
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_3743
+ 1 essential reactions found:
+R_r_1667
+
+Computing essential reactions for M_s_1099
+ 3 essential reactions found:
+R_r_0678
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_0747
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_1346
+ 4 essential reactions found:
+R_r_0893
+R_r_0800
+R_r_0067
+R_r_1667
+
+Computing essential reactions for M_s_1527
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_1520
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_0694
+ 1 essential reactions found:
+R_r_1667
+
+Computing essential reactions for M_s_0430
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_1314
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_3717
+ 6 essential reactions found:
+R_r_0678
+R_r_0800
+R_r_1887
+R_r_0067
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_0432
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_0089
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_0748
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_3742
+ 1 essential reactions found:
+R_r_1667
+
+Computing essential reactions for M_s_0773
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_0004
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_1379
+ 3 essential reactions found:
+R_r_1887
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_0666
+ 4 essential reactions found:
+R_r_0893
+R_r_0800
+R_r_0067
+R_r_1667
+
+Computing essential reactions for M_s_0589
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_0001
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_0832
+ 2 essential reactions found:
+R_r_0893
+R_r_1667
+
+Computing essential reactions for M_s_1148
+ 4 essential reactions found:
+R_r_0893
+R_r_0800
+R_r_0067
+R_r_1667
+
+Computing essential reactions for M_s_1524
+ 1 essential reactions found:
+R_r_1667
+
+Computing essential reactions for M_s_3733
+ 1 essential reactions found:
+R_r_1667
+
+Computing essential reactions for M_s_0649
+ 4 essential reactions found:
+R_r_0893
+R_r_0800
+R_r_0067
+R_r_1667
+
+Overall 10 essential reactions found.
+R_r_0800
+R_r_0678
+R_r_1887
+R_r_0942
+R_r_2030
+R_r_0067
+R_t_0077
+R_r_1083
+R_r_0893
+R_r_1667
+
+Adding essential reactions to network.
+
+Computing one minimal completion to produce all targets
+R_r_0800
+R_r_0678
+R_r_1887
+R_r_0942
+R_r_2030
+R_r_0067
+R_t_0077
+R_r_1083
+R_r_0893
+R_r_1667
+
+Computing common reactions in all completion with size 10
+R_r_0800
+R_r_0678
+R_r_1887
+R_r_0942
+R_r_2030
+R_r_0067
+R_t_0077
+R_r_1083
+R_r_0893
+R_r_1667
+
+Computing union of reactions from all completion with size 10
+R_r_0800
+R_r_0678
+R_r_1887
+R_r_0942
+R_r_2030
+R_r_0067
+R_t_0077
+R_r_1083
+R_r_0893
+R_r_1667
+

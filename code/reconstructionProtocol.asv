@@ -403,7 +403,7 @@ sol = solveLP(model, 1)
 printFluxes(model, sol.x, true)
 
 % We find that the model can now produce biomass after RAVEN gap-filling
-% function added the following reactions: r_0132, r_0438 and r_4046
+% fun
 
 cd([code 'lipidMetabolism'])
 model = scaleLipids(model, 'tails');
@@ -418,11 +418,6 @@ model = setParam(model, 'lb', 'r_1714', -1);
 model = setParam(model, 'lb', 'r_4041', 0);
 model = deleteUnusedGenes(model);
 
-% Water and H+ exchange was unbalanced in rich media simulations due to
-% amino acid reactions from iYali that are not required for biomass 
-% production which resulted in dead end fluxes, requiring their removal
-model = removeReactions(model,{'y300065','y300066','y200008'});
-
 save([root '/scrap/model_r5.mat'],'model');
 % load([root 'scrap/model_r5.mat'])
 
@@ -434,7 +429,7 @@ disp(['Number of genes / rxns / mets in model:  ' ...
 % Export to Excel format for easy inspection
 exportToExcelFormat(model,[root '/scrap/model_r5.xlsx']);
 
-clear addedRxns rxns sol biomassRxns fid menecoRxns modelRhto2 modelYli2
+clear addedRxns rxns sol biomassRxns
 
 
 

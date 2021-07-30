@@ -1,0 +1,37 @@
+r_1063	(tyrosine transaminase):	1000
+r_1277	(water diffusion):	-1000
+r_2119	(tyrosine transaminase):	-1000
+y300065	(L-Serine:pyruvate aminotransferase):	1000
+y300066	(L-Serine:glyoxylate aminotransferase):	-1000
+y200008	(O-succinylhomoserine lyase (elimination)):	985.3979
+r_1832	(H+ exchange):	-993.5778
+r_2100	(water exchange):	1000
+r_1824	(H+ diffusion):	984.3215
+r_2125	(coenzyme A: cytoplasm to LP):	-999.9924
+r_3510	(palmitate transport, cytoplasm-ER membrane):	1000
+r_3511	(palmitoleate transport, cytoplasm-ER membrane):	1000
+r_3517	(palmitoyl-CoA transport, cytoplasm-ER membrane):	-999.8095
+r_3519	(stearoyl-CoA transport, cytoplasm-ER membrane):	-999.9924
+r_3520	(oleoyl-CoA transport, cytoplasm-ER membrane):	1000
+r_3528	(coenzyme A transport, cytoplasm-ER membrane):	999.7008
+r_3543	(ATP transport, cytoplasm-ER membrane):	999.9908
+r_3544	(AMP transport, cytoplasm-ER membrane):	-999.9908
+
+3-(4-hydroxyphenyl)pyruvate[c] + L-glutamate[c] <=> 2-oxoglutarate[c] + L-tyrosine[c]
+H2O[e] <=> H2O[c]
+3-(4-hydroxyphenyl)pyruvate[c] + L-alanine[c] <=> L-tyrosine[c] + pyruvate[c]
+L-serine[c] + pyruvate[c] <=> hydroxypyruvate[c] + L-alanine[c]
+glyoxylate[c] + L-serine[c] <=> hydroxypyruvate[c] + L-glycine[c]
+O-succinyl-L-homoserine[c] => 2-oxobutanoate[c] + ammonium[c] + succinate[c]
+H+[e] <=> 
+H2O[e] <=> 
+H+[e] => H+[c]
+coenzyme A[c] <=> coenzyme A[lp]
+palmitate[c] <=> palmitate[erm]
+palmitoleate[c] <=> palmitoleate[erm]
+palmitoyl-CoA[c] <=> palmitoyl-CoA[erm]
+stearoyl-CoA[c] <=> stearoyl-CoA[erm]
+oleoyl-CoA[c] <=> oleoyl-CoA[erm]
+coenzyme A[c] <=> coenzyme A[erm]
+ATP[c] <=> ATP[erm]
+AMP[c] <=> AMP[erm]

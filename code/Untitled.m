@@ -19,32 +19,34 @@ model_tmp = setParam(model_tmp, 'lb', requiredRxns, -1000);
 %
 % set glucose as carbon source and unlimited O2 for aerobic growth
 model_tmp = setParam(model_tmp, 'eq', {'r_1714'}, 0);    % glucose
-model_tmp = setParam(model_tmp, 'lb', {'r_1714'}, -3);
+%model_tmp = setParam(model_tmp, 'lb', {'r_1714'}, -3);
 %model_tmp = setParam(model_tmp, 'ub', {'r_1714'}, 0);    
 
 %model_tmp = setParam(model_tmp, 'lb', {'r_1634'}, -1);  % acetate
 %model_tmp = setParam(model_tmp, 'lb', {'r_1878'}, -3);  % arabinose
+%model_tmp = setParam(model_tmp, 'lb', {'r_4348'}, -3);  % cellobiose
 %model_tmp = setParam(model_tmp, 'lb', {'r_1687'}, -3);  % citrate
 %model_tmp = setParam(model_tmp, 'lb', {'r_1761'}, -3);  % ethanol
 %model_tmp = setParam(model_tmp, 'lb', {'r_1710'}, -3);  % galactose
+%model_tmp = setParam(model_tmp, 'lb', {'r_4345'}, -3);  % lactose
+model_tmp = setParam(model_tmp, 'lb', {'r_4350'}, -3);  % levoglucosan
+%model_tmp = setParam(model_tmp, 'lb', {'r_4339'}, -10);  % rhamnose
 %model_tmp = setParam(model_tmp, 'lb', {'r_1546'}, -3);  % R-lactate
 %model_tmp = setParam(model_tmp, 'lb', {'r_1551'}, -3);  % S-lactate
 %model_tmp = setParam(model_tmp, 'lb', {'r_1715'}, -3);  % mannose
 %model_tmp = setParam(model_tmp, 'lb', {'r_1650'}, -3);  % trehalose
 %model_tmp = setParam(model_tmp, 'lb', {'r_2104'}, -3);  % xylitol
 
+% restriction of other reactions
 model_tmp = setParam(model_tmp, 'lb', {'r_1992'}, -1000);    % O2
 model_tmp = setParam(model_tmp, 'ub', {'r_1992'}, 0);
 
-% restriction of other reactions
 %model_tmp = setParam(model_tmp, 'eq', {'r_1671'}, 0);    % biotin
-model_tmp = setParam(model_tmp, 'eq', {'r_1671'}, 0);    % biotin
-
 
 % set biomass pseudoreaction as objective
 model_tmp = setParam(model_tmp, 'lb', {'r_2111'}, 0);   % block biomass uptake
-%model_tmp = setParam(model_tmp, 'ub', {'r_2111'}, 1000);
 model_tmp = setParam(model_tmp, 'obj',{'r_2111'}, 1);   
+
 %
 sol = solveLP(model_tmp, 1)
 %

@@ -436,10 +436,47 @@ exportToExcelFormat(model,[root '/scrap/model_r5.xlsx']);
 
 clear addedRxns rxns sol biomassRxns fid menecoRxns modelRhto2 modelYli2
 
+%% 6 Add and adjust lista-specific reactions
 
+% Manually add a list of metabolites
+metsToAdd.metNames      = {'L-Rhamnose','L-Rhamnose','L-rhamnonic acid-gamma-lactone','L-rhamnonic acid','3,6-dideoxy-L-erythro-hexulosonic acid','lactose','lactose','cellobiose','levoglucosan','levoglucosan'};
+metsToAdd.compartments  = {'e','c','c','c','c','e','c','e','e','c'};
+metsToAdd.metFormulas   = {'C6H12O5','C6H12O5','C6H10O5','C6H12O6','C6H9O5','C12H22O11','C12H22O11','C12H22O11','C6H10O5','C6H10O5'};
+metsToAdd.mets          = generateNewIds(model,'mets','s_',length(metsToAdd.metNames));
+%metsToAdd.metMiriams    = repmat({struct('name',{{'sbo'}},'value',{{'SBO:0000649'}})},1,3);
+model                   = addMets(model,metsToAdd); clear metsToAdd;
 
+% Manually add a list of reactions
 
+fid         = fopen([data '/reconstruction/listaSpecificRxns.txt']);
+loadedData  = textscan(fid,'%q %q %q %q %q','delimiter',{'\t','"'},'MultipleDelimsAsOne',1,'TreatAsEmpty','_');
+fclose(fid);
 
+clear rxnsToAdd
+rxnsToAdd.equations     = regexprep(loadedData{1},'***','');
+rxnsToAdd.rxnNames      = regexprep(loadedData{2},'***','');
+rxnsToAdd.grRules       = regexprep(loadedData{3},'***','');
+rxnsToAdd.subSystems    = regexprep(loadedData{4},'***','');
+for i=1:numel(rxnsToAdd.subSystems)
+    rxnsToAdd.subSystems{i}=rxnsToAdd.subSystems(i);
+end
+rxnsToAdd.eccodes       = regexprep(loadedData{5},'***','');
+rxnsToAdd.rxns          = generateNewIds(model,'rxns','r_',length(rxnsToAdd.rxnNames));
+model                   = addRxns(model,rxnsToAdd,3,'',false,true); clear rxnsToAdd
+model                   = removeReactions(model,'r_0719',false,false,false);
+
+save([root '/scrap/model_r6.mat'],'model');
+% load([root 'scrap/model_r6.mat'])
+
+disp(['Number of genes / rxns / mets in model:  ' ...
+    num2str(length(model.genes)) ' / ' ...
+    num2str(length(model.rxns)) ' / ' ...
+    num2str(length(model.mets))])
+
+% Export to Excel format for easy inspection
+exportToExcelFormat(model,[root '/scrap/model_r6.xlsx']);
+
+clear ans fid i loadedData
 
 
 

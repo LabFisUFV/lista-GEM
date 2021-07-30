@@ -1,0 +1,14 @@
+L-Rhamnose[e] =>	L-Rhamnose exchange			
+L-Rhamnose[e] <=> L-Rhamnose[c]	L-Rhamnose transport			
+L-Rhamnose[c] + NAD[c] + H2O[c] <=> NADH[c] + H+[c] + L-rhamnonic acid-gamma-lactone[c]	NAD-utilising L-rhamnose-1-dehydrogenase	ODQ75328.1	Rhamnose catabolism	1.1.1.173
+L-rhamnonic acid-gamma-lactone[c] + H2O[c] <=> L-rhamnonic acid[c] + H+[c]	L-rhamnono-gamma-lactonase	ODQ73369.1 or ODQ75327.1	Rhamnose catabolism	3.1.1.65
+L-rhamnonic acid[c] <=> 3,6-dideoxy-L-erythro-hexulosonic acid[c] + H2O[c]	L-rhamnonate dehydratase	ODQ75330.1 or ODQ73374.1	Rhamnose catabolism	4.2.1.90
+3,6-dideoxy-L-erythro-hexulosonic acid[c] <=> (S)-lactaldehyde[c] + pyruvate[c]	3,6-dideoxy-L-erythro-hexulosonic acid aldolase	ODQ73368.1 or ODQ75326.1 or ODQ75258.1	Rhamnose catabolism	4.2.1.-
+lactose[e] =>	lactose exchange			
+lactose[e] <=> lactose[c]	lactose transport			
+lactose[c] => D-glucose[c] + D-galactose[c]	beta-galactosidase	ODQ74454.1	Lactose catabolism	3.2.1.23
+cellobiose[e] =>	cellobiose exchange			
+cellobiose[e] <=> cellobiose[c]  	cellobiose transport	ODQ69961.1	Cellobiose catabolism	
+levoglucosan[e] =>	levoglucosan exchange			
+levoglucosan[e] <=> levoglucosan[c]	levoglucosan transport			
+ATP[c] + levoglucosan[c] => ADP[c] + D-glucose 6-phosphate[c] + H+[c]	levoglucosan kinase			

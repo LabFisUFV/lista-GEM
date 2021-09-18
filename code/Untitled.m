@@ -19,23 +19,29 @@ model_tmp = setParam(model_tmp, 'lb', requiredRxns, -1000);
 %
 % set glucose as carbon source and unlimited O2 for aerobic growth
 model_tmp = setParam(model_tmp, 'eq', {'r_1714'}, 0);    % glucose
-%model_tmp = setParam(model_tmp, 'lb', {'r_1714'}, -3);
+%model_tmp = setParam(model_tmp, 'lb', {'r_1714'}, -2.5);
 %model_tmp = setParam(model_tmp, 'ub', {'r_1714'}, 0);    
 
-%model_tmp = setParam(model_tmp, 'lb', {'r_1634'}, -1);  % acetate
-%model_tmp = setParam(model_tmp, 'lb', {'r_1878'}, -3);  % arabinose
-%model_tmp = setParam(model_tmp, 'lb', {'r_4348'}, -3);  % cellobiose
-%model_tmp = setParam(model_tmp, 'lb', {'r_1687'}, -3);  % citrate
-%model_tmp = setParam(model_tmp, 'lb', {'r_1761'}, -3);  % ethanol
-%model_tmp = setParam(model_tmp, 'lb', {'r_1710'}, -3);  % galactose
-%model_tmp = setParam(model_tmp, 'lb', {'r_4345'}, -3);  % lactose
-model_tmp = setParam(model_tmp, 'lb', {'r_4350'}, -3);  % levoglucosan
-%model_tmp = setParam(model_tmp, 'lb', {'r_4339'}, -10);  % rhamnose
-%model_tmp = setParam(model_tmp, 'lb', {'r_1546'}, -3);  % R-lactate
-%model_tmp = setParam(model_tmp, 'lb', {'r_1551'}, -3);  % S-lactate
-%model_tmp = setParam(model_tmp, 'lb', {'r_1715'}, -3);  % mannose
-%model_tmp = setParam(model_tmp, 'lb', {'r_1650'}, -3);  % trehalose
-%model_tmp = setParam(model_tmp, 'lb', {'r_2104'}, -3);  % xylitol
+%model_tmp = setParam(model_tmp, 'lb', {'r_1634'}, -2.5);  % acetate
+%model_tmp = setParam(model_tmp, 'lb', {'r_1878'}, -2.5);  % arabinose
+%model_tmp = setParam(model_tmp, 'lb', {'r_4348'}, -2.5);  % cellobiose
+%model_tmp = setParam(model_tmp, 'lb', {'r_1687'}, -2.5);  % citrate
+%model_tmp = setParam(model_tmp, 'lb', {'r_1761'}, -2.5);  % ethanol
+%model_tmp = setParam(model_tmp, 'lb', {'r_1710'}, -2.5);  % galactose
+%model_tmp = setParam(model_tmp, 'lb', {'r_4345'}, -2.5);  % lactose
+model_tmp = setParam(model_tmp, 'lb', {'r_4350'}, -2.5);  % levoglucosan
+%model_tmp = setParam(model_tmp, 'lb', {'r_4339'}, -2.5);  % rhamnose
+%model_tmp = setParam(model_tmp, 'lb', {'r_1546'}, -2.5);  % R-lactate
+%model_tmp = setParam(model_tmp, 'lb', {'r_1551'}, -2.5);  % S-lactate
+%model_tmp = setParam(model_tmp, 'lb', {'r_1715'}, -2.5);  % mannose
+%model_tmp = setParam(model_tmp, 'lb', {'r_1650'}, -2.5);  % trehalose
+%model_tmp = setParam(model_tmp, 'lb', {'r_2104'}, -2.5);  % xylitol
+%model_tmp = setParam(model_tmp, 'lb', {'r_1808'}, -2.5);  % glycerol
+%model_tmp = setParam(model_tmp, 'lb', {'r_1718'}, -2.5);  % xylose
+%model_tmp = setParam(model_tmp, 'lb', {'r_2058'}, -2.5);  % sucrose
+%model_tmp = setParam(model_tmp, 'lb', {'r_4043'}, -2.5);  % raffinose
+%model_tmp = setParam(model_tmp, 'lb', {'r_1931'}, -2.5);  % maltose
+%model_tmp = setParam(model_tmp, 'lb', {'r_2056'}, -2.5);  % succinate
 
 % restriction of other reactions
 model_tmp = setParam(model_tmp, 'lb', {'r_1992'}, -1000);    % O2
@@ -53,7 +59,7 @@ sol = solveLP(model_tmp, 1)
 printFluxes(model_tmp, sol.x, true);
 %
 %printFluxes(model_tmp, sol.x, false);
-
+%clear exchangeRxns requiredRxns model_tmp sol solYPD model_tmpYPD aminoacidRxns
 %%
 % nutrient uptake reactions to simulate rich medium conditions
 clear model_tmpYPD
@@ -80,7 +86,7 @@ aminoacidRxns = {'r_1810'; ... % L-glycine
                  'r_1913'; ... % L-tyrosine
                  'r_1914'};    % L-valine
               
-model_tmpYPD = setParam(model_tmpYPD, 'lb', aminoacidRxns, -1);
+model_tmpYPD = setParam(model_tmpYPD, 'lb', aminoacidRxns, -0.1);
 
 solYPD = solveLP(model_tmpYPD)
 

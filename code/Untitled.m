@@ -127,3 +127,49 @@ model_CC = setParam(model_CC, 'eq', {'r_1714'}, 0);
 
 solution = simulateChemostat(model_CC, 1, ['r_1718' 'r_2111']);
 printFluxes(model_CC, solution, true);
+
+%% FVAs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

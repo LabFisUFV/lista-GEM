@@ -1,5 +1,5 @@
 %% PROTOCOL FOR THE RECONSTRUCTION OF A Lipomyces starkeyi GENOME SCALE MODEL USING THE RAVEN TOOLBOX
-%  AUTHORS: Eduardo L. M. Almeida; Maurício A. M. Ferreira
+%  AUTHORS: Eduardo L. M. Almeida; MaurÃ­cio A. M. Ferreira
 %
 % Complementary to the manuscript, where more detailed descriptions are provided. 
 %
@@ -552,6 +552,9 @@ model.description             = 'Genome-scale metabolic model of Lipomyces stark
 exportForGit(model,'lista-GEM','..',{'mat', 'txt', 'xlsx', 'xml', 'yml'});
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> main

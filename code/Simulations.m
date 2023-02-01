@@ -122,7 +122,7 @@ model_CC = setParam(model_CC, 'eq', {'r_1714'}, 0);
 solution = simulateChemostat(model_CC, 1, ['r_1718' 'r_2111']);
 printFluxes(model_CC, solution, true);
 
-%% Surface substrate vs. oxygen
+%% Surface substrate vs. oxygen for growth
 %Minimal media 
 
 load('C:\Users\dudul\OneDrive\Documentos_UFV\LABFIS\Lipomyces\GEM-Lipomyces\ModelFiles\mat\lista-GEM.mat')
@@ -147,13 +147,13 @@ model_tmp = setParam(model_tmp, 'lb', exchangeRxns, 0);
 model_tmp = setParam(model_tmp, 'lb', requiredRxns, -1000);
 model_tmp = setParam(model_tmp, 'lb', {'r_2111'}, 0);   % block biomass uptake
 model_tmp = setParam(model_tmp, 'obj', {'r_2111'}, 1);   % biomass
-
+%%
 %glucose 
 
-ds = 0.01
-do = 0.05
+ds = 0.05
+do = 0.25
 s = 0:ds:10
-o = 0:do:50
+o = 0:do:50-
 
 
 for i = 1:length(s)
@@ -171,33 +171,54 @@ surfl(o,s,growthRates) %3D plot
 
 
 %xylose
+
 model_tmp = setParam(model_tmp,'eq', 'r_1714',0);
 
-for i = 0:9
-    for j = 0:36
-model_tmp = setParam(model_tmp,'lb', 'r_1718',-i);
-model_tmp = setParam(model_tmp,'lb', 'r_1992',-j);
+ds = 0.05
+do = 0.25
+s = 0:ds:10
+o = 0:do:50
+
+
+for i = 1:length(s)
+    for j = 1:length(o)
+model_tmp = setParam(model_tmp,'lb', 'r_1718',-s(i));
+model_tmp = setParam(model_tmp,'lb', 'r_1992',-o(j));
 FBAsolution = optimizeCbModel(model_tmp,'max');
-growthRates(i+1,j+4) = FBAsolution.f;
+growthRates(i,j) = FBAsolution.f;
     end
 end
 
-pcolor(growthRates) %2D plot
 
-surfl(growthRates) %3D plot
+pcolor(o,s,growthRates) %2D plot
+
+surfl(o,s,growthRates) %3D plot
 
 
 %glycerol
+model_tmp = setParam(model_tmp,'eq', 'r_1714',0);
 
-for i = 0:4
-    for j = 0:16
-model_tmp = setParam(model_tmp,'lb', 'r_1808',-i);
-model_tmp = setParam(model_tmp,'lb', 'r_1992',-j);
+ds = 0.025
+do = 0.125
+s = 0:ds:5
+o = 0:do:25
+
+
+for i = 1:length(s)
+    for j = 1:length(o)
+model_tmp = setParam(model_tmp,'lb', 'r_1808',-s(i));
+model_tmp = setParam(model_tmp,'lb', 'r_1992',-o(j));
 FBAsolution = optimizeCbModel(model_tmp,'max');
-growthRates(i+1,j+4) = FBAsolution.f;
+growthRates(i,j) = FBAsolution.f;
     end
 end
 
-pcolor(growthRates) %2D plot
 
-surfl(growthRates) %3D plot
+
+pcolor(o,s,growthRates) %2D plot
+
+surfl(o,s,growthRates) %3D plot
+
+%acetate
+
+

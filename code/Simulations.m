@@ -148,12 +148,13 @@ model_tmp = setParam(model_tmp, 'lb', requiredRxns, -1000);
 model_tmp = setParam(model_tmp, 'lb', {'r_2111'}, 0);   % block biomass uptake
 model_tmp = setParam(model_tmp, 'obj', {'r_2111'}, 1);   % biomass
 %%
+%%
 %glucose 
 
 ds = 0.05
 do = 0.25
 s = 0:ds:10
-o = 0:do:50-
+o = 0:do:50
 
 
 for i = 1:length(s)
@@ -219,6 +220,94 @@ pcolor(o,s,growthRates) %2D plot
 
 surfl(o,s,growthRates) %3D plot
 
-%acetate
 
+
+
+%% Surface substrate vs.oxygen for TAG production
+% Minimal media 
+
+load('C:\Users\dudul\OneDrive\Documentos_UFV\LABFIS\Lipomyces\GEM-Lipomyces\ModelFiles\mat\lista-GEM.mat')
+
+idx = getIndexes(model, {'triglyceride (1-16:0, 2-18:1, 3-18:1)[erm]', ...
+    'triglyceride (1-16:0, 2-18:1, 3-18:1)[lp]'}, 'metcomps');
+% Add exchange reactions for products
+rxnsToAdd.rxns          = 'exch_TAG';
+rxnsToAdd.mets          = model.mets(idx);
+rxnsToAdd.stoichCoeffs  = {[-1, -1]}; 
+rxnsToAdd.lb            = 0;
+model = addRxns(model,rxnsToAdd);
+
+model = setParam(model,'obj','exch_TAG',1);
+model = setParam(model,'lb','r_4046',0);
+model = setParam(model, 'lb', {'r_1992'}, -1000);    % O2
+model = setParam(model, 'ub', {'r_1992'}, 0);
+model = setParam(model,'eq','r_2111',0.01);
+
+%glucose 
+
+ds = 0.05
+do = 0.25
+s = 0:ds:10
+o = 0:do:50
+
+
+for i = 1:length(s)
+    for j = 1:length(o)
+model = setParam(model,'lb', 'r_1714',-s(i));
+model = setParam(model,'lb', 'r_1992',-o(j));
+FBAsolution = optimizeCbModel(model,'max');
+growthRates(i,j) = FBAsolution.f;
+    end
+end
+printFluxes(model, FBAsolution.x)
+
+pcolor(o,s,growthRates) %2D plot
+
+%xylose
+
+model = setParam(model,'eq', 'r_1714',0);
+
+ds = 0.05
+do = 0.25
+s = 0:ds:10
+o = 0:do:50
+
+
+for i = 1:length(s)
+    for j = 1:length(o)
+model = setParam(model,'lb', 'r_1718',-s(i));
+model = setParam(model,'lb', 'r_1992',-o(j));
+FBAsolution = optimizeCbModel(model,'max');
+growthRates(i,j) = FBAsolution.f;
+    end
+end
+
+
+pcolor(o,s,growthRates) %2D plot
+
+surfl(o,s,growthRates) %3D plot
+
+
+%glycerol
+model = setParam(model,'eq', 'r_1714',0);
+
+ds = 0.025
+do = 0.125
+s = 0:ds:5
+o = 0:do:25
+
+for i = 1:length(s)
+    for j = 1:length(o)
+model = setParam(model,'lb', 'r_1808',-s(i));
+model = setParam(model,'lb', 'r_1992',-o(j));
+FBAsolution = optimizeCbModel(model,'max');
+growthRates(i,j) = FBAsolution.f;
+    end
+end
+
+
+
+pcolor(o,s,growthRates) %2D plot
+
+surfl(o,s,growthRates) %3D plot
 

@@ -1,1 +1,1 @@
-Genome-scale metabolic rconstruction of *Lipomyces starkeyi*.
+Genome-scale metabolic reconstruction of *Lipomyces starkeyi*.

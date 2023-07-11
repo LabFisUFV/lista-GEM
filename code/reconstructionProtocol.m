@@ -532,7 +532,34 @@ disp(['Number of genes / rxns / mets in model:  ' ...
 exportToExcelFormat(model,[root '/scrap/model_r7.xlsx']);
 
 clear ans fid grRules loadedData rxns
+
+%% Remove Double NGAM
+
+%load([root 'scrap/model_r7.mat'])
+
+model = removeReactions(model,'r_4046_rhto')
+
+% Remove 'rhto' from subsystems
+model.subSystems = cellfun(@(x) regexprep(x,'rhto[0-9]+ +',''),model.subSystems, 'UniformOutput', 0);
+
+% Remove unused metabolites
+model = removeMets(model,all(model.S == 0,2),false,true,true,true);
+
+save([root '/scrap/model_r8.mat'],'model');
+% load([root 'scrap/model_r8.mat'])
+
+disp(['Number of genes / rxns / mets in model:  ' ...
+    num2str(length(model.genes)) ' / ' ...
+    num2str(length(model.rxns)) ' / ' ...
+    num2str(length(model.mets))])
+
+% Export to Excel format for easy inspection
+exportToExcelFormat(model,[root '/scrap/model_r8.xlsx']);
+
+
 %% Export model:
+
+
 
 %Add model information.
 model.annotation.defaultLB    = -1000;
@@ -549,8 +576,9 @@ model.description             = 'Genome-scale metabolic model of Lipomyces stark
 
 
 %Save model
-exportForGit(model,'lista-GEM','..',{'mat', 'txt', 'xlsx', 'xml', 'yml'});
+exportForGit(model,'lista-GEM','..',{'mat', 'txt', 'xlsx', 'xml'});
 
+exportModel(model,'lista-GEM.xml')
 
 <<<<<<< HEAD
 

@@ -1,0 +1,5 @@
+rxnID	rxnName	idx	GR_KO	EX_KO	GR_OE	EX_OE	OEfactor	EXmax
+r_1714	D-glucose exchange	1239	0.0000	0.0000	2.1006	2.3439	2	2.3439
+r_1166	glucose transport	621	0.0000	0.0000	1.0000	1.1133	1.000000e+00	1.1133
+r_2126	sedoheptulose bisphosphatase	722	1.0000	1.1080	1.0000	1.1080	2	1.1080
+r_4046_rhto	non-growth associated maintenance reaction	2829	1.0877	1.0793	0.9123	0.9112	2	1.0793

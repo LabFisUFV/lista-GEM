@@ -1,0 +1,25 @@
+glu_TAG	xyl_TAG	gly_TAG	rxnName	grRule
+18.21	18.17	19.26	pyruvate kinase	ODQ76269.1
+17.99	17.96	18.67	acetyl-CoA carboxylase, reaction	ODQ75673.1 and ODQ72018.1
+17.76	17.73	18.88	enolase	ODQ74427.1
+17.76	17.73	18.88	phosphoglycerate mutase	ODQ73127.1 or ODQ76545.1
+17.28	17.24	18.46	glyceraldehyde-3-phosphate dehydrogenase	ODQ75822.1
+17.28	17.24	18.46	phosphoglycerate kinase	ODQ69690.1
+16.75	16.72	17.60	bicarbonate formation	ODQ71959.1
+100	100	21.09	pyruvate decarboxylase	ODQ73413.1
+100	100	21.09	acetaldehyde dehydrogenase	ODQ69191.1 or ODQ69510.1 or ODQ70419.1 or ODQ70788.1 or ODQ71777.1 or ODQ72007.1 or ODQ73381.1 or ODQ75322.1
+100	100	20.98	acetyl-CoA synthetase	ODQ74542.1
+100	100	18.90	adenylate kinase	ODQ72719.1 or ODQ74535.1
+100	100	17.24	inorganic diphosphatase	ODQ71884.1
+100	100	16.45	triose-phosphate isomerase	ODQ69158.1 or ODQ69323.1
+1.67	1.67	1.72	stearoyl-CoA desaturase (n-C18:0CoA -> n-C18:1CoA), ER membrane	ODQ73471.1
+1.65	1.65	1.69	fatty-acyl-CoA synthase (n-C18:0CoA)	ODQ70131.1 or (ODQ75304.1 and ODQ70130.1) or ODQ70131.1 or ODQ75303.1 or ODQ75304.1
+0.89	0.89	0.92	diacylglycerol acyltransferase (1-16:0, 2-18:1, 3-18:1), endoplasmic reticulum membrane	ODQ70106.1 or ODQ75508.1
+0.82	0.82	0.85	PA phosphatase (1-16:0, 2-18:1), endoplasmic reticulum membrane	ODQ71343.1
+0.82	0.82	0.85	1-acyl-sn-glycerol-3-phosphate acyltransferase (1-16:0, 2-18:1), endoplasmic reticulum membrane	ODQ69760.1 or ODQ75695.1
+0.79	0.79	0.82	glycerol-3-phosphate acyltransferase (16:0), endoplasmic reticulum membrane	ODQ74991.1
+0.69	0.69	0.73	fatty-acyl-CoA synthase (n-C16:0CoA)	ODQ70131.1 or (ODQ75304.1 and ODQ70130.1) or ODQ70131.1 or ODQ75303.1 or ODQ75304.1
+100	100	0.79	glycerol kinase	ODQ76330.1
+100	0.76	100	glycerol-3-phosphate dehydrogenase (NAD)	ODQ74980.1
+				
+%of remaining TAG production 				

@@ -1,0 +1,71 @@
+rxnID	rxnName	idx	GR_KO	EX_KO	GR_OE	EX_OE	OEfactor	EXmax
+r_1714	D-glucose exchange	1239	0.0000	0.0000	2.0119	2.0219	2	2.0219
+r_1827	H+ diffusion	1489	1.0000	1.1689	1.0000	1.1689	2	1.1689
+r_3596	H2O transport, cytoplasm-lipid particle	1684	1.0000	1.1537	1.0000	1.1537	2	1.1537
+r_3597	glycerol transport, lipid particle-cytoplasm	1685	1.0000	1.1421	1.0000	1.1421	2	1.1421
+r_1808	glycerol exchange	1256	1.0000	1.1369	1.0000	1.1369	2	1.1369
+r_1172	glycerol transport via channel	1160	1.0000	1.1253	1.0000	1.1253	2	1.1253
+r_2126	sedoheptulose bisphosphatase	722	1.0000	1.1108	1.0000	1.1108	2	1.1108
+r_0958	pyruvate carboxylase	508	0.9323	0.9932	0.9983	1.1031	2	1.1031
+r_0016	2-aceto-2-hydroxybutanoate synthase	8	-0.0000	0.0000	0.9931	1.0718	2	1.0718
+r_0353	dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylpentanoate)	257	-0.0000	0.0000	0.9931	1.0718	2	1.0718
+r_0669	ketol-acid reductoisomerase (2-aceto-2-hydroxybutanoate)	369	-0.0000	0.0000	0.9931	1.0718	2	1.0718
+r_0887	phosphofructokinase (s7p)	471	1.0000	1.0637	1.0000	1.0637	2	1.0637
+r_0715	malate dehydrogenase, peroxisomal	396	1.0000	1.0576	1.0000	1.0576	2	1.0576
+t_0275	MAG lipase (1-18:0:0), lipid particle	2015	1.0000	1.0569	1.0000	1.0569	2	1.0569
+r_2268	3-hydroxyacyl-CoA dehydrogenase (3-oxohexadecanoyl-CoA)	792	1.0000	1.0557	1.0000	1.0557	2	1.0557
+r_0121	acyl-CoA oxidase (dodecanoyl-CoA)	75	1.0000	1.0557	1.0000	1.0557	2	1.0557
+r_2256	2-enoyl-CoA hydratase (3-hydroxyoctanoyl-CoA)	780	1.0000	1.0556	1.0000	1.0556	2	1.0556
+r_1832	H+ exchange	1262	0.9999	1.0531	0.9998	1.0523	2	1.0531
+r_1116	AMP/ATP transporter	604	1.0000	1.0504	1.0000	1.0504	2	1.0504
+r_2273	3-hydroxyacyl-CoA dehydrogenase (3-oxooctanoyl-CoA)	797	1.0000	1.0497	1.0000	1.0497	2	1.0497
+r_0125	acyl-CoA oxidase (tetradecanoyl-CoA)	79	1.0000	1.0497	1.0000	1.0497	2	1.0497
+r_0057	3-hydroxyacyl-CoA dehydrogenase (3-oxotetradecanoyl-CoA)	27	1.0000	1.0497	1.0000	1.0497	2	1.0497
+r_2249	2-enoyl-CoA hydratase (3-hydroxydodecanoyl-CoA)	773	1.0000	1.0497	1.0000	1.0497	2	1.0497
+r_2267	3-hydroxyacyl-CoA dehydrogenase (3-oxododecanoyl-CoA)	791	1.0000	1.0497	1.0000	1.0497	2	1.0497
+r_0105	acetyl-CoA C-acyltransferase (lauroyl-CoA)	62	1.0000	1.0497	1.0000	1.0497	2	1.0497
+r_2248	2-enoyl-CoA hydratase (3-hydroxydecanoyl-CoA)	772	1.0000	1.0497	1.0000	1.0497	2	1.0497
+r_0120	acyl-CoA oxidase (decanoyl-CoA)	74	1.0000	1.0497	1.0000	1.0497	2	1.0497
+r_2266	3-hydroxyacyl-CoA dehydrogenase (3-oxodecanoyl-CoA)	790	1.0000	1.0497	1.0000	1.0497	2	1.0497
+r_2285	acetyl-CoA C-acyltransferase (hexanoyl-CoA)	809	1.0000	1.0497	1.0000	1.0497	2	1.0497
+r_0107	acetyl-CoA C-acyltransferase (decanoyl-CoA)	64	1.0000	1.0497	1.0000	1.0497	2	1.0497
+r_2238	acyl-CoA oxidase (octanoyl-CoA)	762	1.0000	1.0497	1.0000	1.0497	2	1.0497
+r_2250	2-enoyl-CoA hydratase (3-hydroxytetradecanoyl-CoA)	774	1.0000	1.0497	1.0000	1.0497	2	1.0497
+r_2251	2-enoyl-CoA hydratase (3-hydroxyhexadecanoyl-CoA)	775	1.0000	1.0497	1.0000	1.0497	2	1.0497
+r_0106	acetyl-CoA C-acyltransferase (octanoyl-CoA)	63	1.0000	1.0496	1.0000	1.0496	2	1.0496
+r_0102	acetyl-CoA C-acyltransferase (myristoyl-CoA)	59	1.0000	1.0496	1.0000	1.0496	2	1.0496
+t_0803	1-acyl-sn-glycerol 3-phosphate (18:0) transport, ER membrane-vacuolar membrane	2707	1.0000	1.0480	1.0000	1.0480	2	1.0480
+r_0123	acyl-CoA oxidase (hexadecanoyl-CoA)	77	1.0000	1.0477	1.0000	1.0477	2	1.0477
+r_1980	O2 transport	1568	1.0000	1.0458	1.0000	1.0458	2	1.0458
+r_1930	malate/oxaloacetate shuttle	1544	1.0000	1.0458	1.0000	1.0458	2	1.0458
+t_0573	1-monoglyceride (18:0) transport, ER membrane-vacuolar membrane	2399	1.0000	1.0429	1.0000	1.0429	2	1.0429
+t_0571	1-monoglyceride (18:0) transport, ER membrane-lipid particle	2397	1.0000	1.0429	1.0000	1.0429	2	1.0429
+r_1747	diphosphate transport	1456	1.0000	1.0404	1.0000	1.0404	2	1.0404
+r_2140	fatty-acyl-CoA synthase (n-C16:0CoA)	725	0.9954	0.9952	1.0000	1.0376	2	1.0376
+r_0301	citrate synthase, peroxisomal	224	1.0000	1.0372	1.0000	1.0372	2	1.0372
+r_1689	citrate/malate antiport	1433	1.0000	1.0372	1.0000	1.0372	2	1.0372
+r_3246	lysoPA phosphatase (18:0), vacuolar membrane	1989	1.0000	1.0369	1.0000	1.0369	2	1.0369
+r_0502	glycine hydroxymethyltransferase	309	0.9996	1.0345	0.9917	0.0000	2	1.0345
+y300057	L-Glutamate 5-semialdehyde:NAD+ oxidoreductase	1181	0.9997	1.0338	0.9955	0.0000	2	1.0338
+r_0113	acetyl-CoA synthetase	69	1.0000	1.0317	1.0000	1.0317	2	1.0317
+r_0473	glutamate-5-semialdehyde dehydrogenase	293	1.0000	1.0313	1.0000	1.0313	2	1.0313
+r_0468	glutamate 5-kinase	288	1.0000	1.0313	1.0000	1.0313	2	1.0313
+r_3648	H2O transport, cytoplasm-vacuolar membrane	1704	1.0000	1.0301	1.0000	1.0301	2	1.0301
+r_3649	phosphate transport, cytoplasm-vacuolar membrane	1705	1.0000	1.0301	1.0000	1.0301	2	1.0301
+r_0215	aspartate kinase	158	-0.0000	0.0000	0.9920	1.0300	2	1.0300
+r_0219	aspartate-semialdehyde dehydrogenase	162	-0.0000	0.0000	0.9920	1.0300	2	1.0300
+r_2141	fatty-acyl-CoA synthase (n-C18:0CoA)	726	1.0000	1.0299	0.9897	0.9879	2	1.0299
+r_1811	glycine transport	1478	1.0000	1.0289	1.0000	0.0000	1.000000e+00	1.0289
+r_1830	H+ diffusion	1491	1.0000	1.0281	1.0000	1.0281	2	1.0281
+r_0503	glycine hydroxymethyltransferase	310	1.0000	1.0267	1.0000	1.0267	2	1.0267
+r_2045	serine transport	1589	1.0000	1.0267	1.0000	1.0267	2	1.0267
+r_1794	formate transport	1471	1.0000	1.0266	1.0000	1.0266	2	1.0266
+r_0725	methenyltetrahydrofolate cyclohydrolase	403	0.9999	1.0263	0.9976	0.0000	2	1.0263
+r_0447	formate-tetrahydrofolate ligase	273	1.0000	1.0260	1.0000	1.0260	2	1.0260
+r_0724	methenyltetrahydrifikate cyclohydrolase	402	1.0000	1.0260	1.0000	1.0260	2	1.0260
+r_0733	methylenetetrahydrofolate dehydrogenase (NADP)	410	1.0000	1.0260	1.0000	1.0260	2	1.0260
+r_1572	2-isopropylmalate exchange	1206	1.0000	1.0248	1.0000	1.0248	2	1.0248
+r_1573	2-isopropylmalate transport	1375	1.0000	1.0248	1.0000	1.0248	2	1.0248
+r_0732	methylenetetrahydrofolate dehydrogenase (NADP)	409	1.0000	1.0247	0.4831	0.4826	2	1.0247
+r_0175	aldehyde dehydrogenase (acetylaldehyde, NADP)	121	1.0000	1.0234	1.0000	1.0234	2	1.0234
+r_0446	formate-tetrahydrofolate ligase	272	1.0000	1.0207	1.0000	1.0207	2	1.0207

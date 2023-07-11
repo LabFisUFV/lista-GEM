@@ -1,0 +1,51 @@
+rxnID	rxnName	idx	GR_KO	EX_KO	GR_OE	EX_OE	OEfactor	EXmax
+r_1808	glycerol exchange	1033	0.0000	0.0000	2.0249	2.0245	2	2.0245
+r_0958	pyruvate carboxylase	619	0.9384	1.0884	0.9980	1.1180	2	1.1180
+r_0353	dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylpentanoate)	274	-0.0000	0.0000	0.9930	1.1058	2	1.1058
+r_0669	ketol-acid reductoisomerase (2-aceto-2-hydroxybutanoate)	461	-0.0000	0.0000	0.9930	1.1058	2	1.1058
+r_0016	2-aceto-2-hydroxybutanoate synthase	9	-0.0000	0.0000	0.9930	1.1058	2	1.1058
+r_0219	aspartate-semialdehyde dehydrogenase	173	-0.0000	0.0000	0.9919	1.0668	2	1.0668
+r_0215	aspartate kinase	169	-0.0000	0.0000	0.9919	1.0668	2	1.0668
+r_1832	H+ exchange	1055	0.9861	1.0198	1.0000	1.0604	2	1.0604
+r_1794	formate transport	1022	0.9999	1.0476	1.0000	1.0471	2	1.0476
+r_2045	serine transport	1211	0.9999	1.0476	1.0000	1.0472	2	1.0476
+r_0503	glycine hydroxymethyltransferase	336	0.9999	1.0476	1.0000	1.0472	2	1.0476
+r_0724	methenyltetrahydrifikate cyclohydrolase	497	0.9999	1.0476	1.0000	1.0471	2	1.0476
+r_0733	methylenetetrahydrofolate dehydrogenase (NADP)	505	0.9999	1.0476	1.0000	1.0430	2	1.0476
+r_0447	formate-tetrahydrofolate ligase	297	0.9999	1.0476	1.0000	1.0471	2	1.0476
+r_1811	glycine transport	1036	0.9999	1.0473	1.0000	1.0463	2	1.0473
+r_2141	fatty-acyl-CoA synthase (n-C18:0CoA)	1273	1.0000	0.9860	0.9913	1.0444	2	1.0444
+r_0725	methenyltetrahydrofolate cyclohydrolase	498	0.9999	1.0438	0.9977	0.0000	2	1.0438
+r_0732	methylenetetrahydrofolate dehydrogenase (NADP)	504	1.0000	1.0421	0.2523	0.2539	2	1.0421
+r_0446	formate-tetrahydrofolate ligase	296	1.0000	1.0393	1.0000	1.0393	2	1.0393
+r_0887	phosphofructokinase (s7p)	580	1.0000	1.0389	1.0000	1.0389	2	1.0389
+r_0113	acetyl-CoA synthetase	78	1.0000	1.0212	1.0000	1.0367	2	1.0367
+r_2126	sedoheptulose bisphosphatase	1264	1.0000	1.0363	1.0000	1.0363	2	1.0363
+r_0715	malate dehydrogenase, peroxisomal	491	1.0000	1.0348	1.0000	1.0348	2	1.0348
+r_1980	O2 transport	1172	1.0000	1.0341	1.0000	1.0341	2	1.0341
+r_2266	3-hydroxyacyl-CoA dehydrogenase (3-oxodecanoyl-CoA)	1349	1.0000	1.0338	1.0000	1.0338	2	1.0338
+r_2273	3-hydroxyacyl-CoA dehydrogenase (3-oxooctanoyl-CoA)	1356	1.0000	1.0338	1.0000	1.0338	2	1.0338
+r_2256	2-enoyl-CoA hydratase (3-hydroxyoctanoyl-CoA)	1339	1.0000	1.0338	1.0000	1.0338	2	1.0338
+r_0961	pyruvate dehydrogenase	622	0.9980	1.0328	0.9980	1.0080	2	1.0328
+r_0468	glutamate 5-kinase	313	1.0000	1.0265	1.0000	1.0301	2	1.0301
+r_0473	glutamate-5-semialdehyde dehydrogenase	318	1.0000	1.0250	1.0000	1.0299	2	1.0299
+y300057	L-Glutamate 5-semialdehyde:NAD+ oxidoreductase	2827	1.0000	1.0295	1.0000	1.0295	2	1.0295
+r_0175	aldehyde dehydrogenase (acetylaldehyde, NADP)	132	1.0000	1.0265	1.0000	1.0265	2	1.0265
+r_0107	acetyl-CoA C-acyltransferase (decanoyl-CoA)	73	1.0000	1.0265	1.0000	1.0265	2	1.0265
+r_2267	3-hydroxyacyl-CoA dehydrogenase (3-oxododecanoyl-CoA)	1350	1.0000	1.0258	1.0000	1.0258	2	1.0258
+r_0121	acyl-CoA oxidase (dodecanoyl-CoA)	85	1.0000	1.0255	1.0000	1.0255	2	1.0255
+r_0102	acetyl-CoA C-acyltransferase (myristoyl-CoA)	68	1.0000	1.0255	1.0000	1.0255	2	1.0255
+r_0105	acetyl-CoA C-acyltransferase (lauroyl-CoA)	71	1.0000	1.0254	1.0000	1.0254	2	1.0254
+r_2238	acyl-CoA oxidase (octanoyl-CoA)	1321	1.0000	1.0254	1.0000	1.0254	2	1.0254
+r_0106	acetyl-CoA C-acyltransferase (octanoyl-CoA)	72	1.0000	1.0252	1.0000	1.0252	2	1.0252
+r_1137	D-lactate transport	751	0.9986	1.0248	0.9971	0.9861	2	1.0248
+r_1138	D-lactate/pyruvate antiport	752	0.9986	1.0247	0.9971	0.9861	2	1.0247
+r_1830	H+ diffusion	1053	1.0000	1.0243	1.0000	1.0243	2	1.0243
+r_1930	malate/oxaloacetate shuttle	1144	1.0000	1.0236	1.0000	1.0236	2	1.0236
+r_0191	allophanate hydrolase	148	1.0000	1.0234	1.0000	1.0234	2	1.0234
+r_1689	citrate/malate antiport	958	1.0000	1.0226	1.0000	1.0226	2	1.0226
+r_0301	citrate synthase, peroxisomal	239	1.0000	1.0225	1.0000	1.0225	2	1.0225
+r_1687	citrate(3-) exchange	956	1.0000	1.0222	1.0000	1.0222	2	1.0222
+r_1686	citrate transport	955	1.0000	1.0220	1.0000	1.0220	2	1.0220
+r_0207	argininosuccinate lyase	161	-0.0000	0.0000	0.9980	1.0200	2	1.0200
+r_0208	argininosuccinate synthase	162	-0.0000	0.0000	0.9980	1.0200	2	1.0200

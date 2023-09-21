@@ -1,11 +1,11 @@
 # lista-GEM: Genome-scale metabolic reconstruction of _Lipomyces starkeyi_
 
 [![Version](https://badge.fury.io/gh/LabFisUFV%2Flista-GEM.svg)](https://badge.fury.io/gh/LabFisUFV/lista-GEM)  
-[![Zenodo](https://zenodo.org/badge/{{Zenodo ID}}.svg)](https://zenodo.org/badge/latestdoi/{{Zenodo ID}})  
+[![Zenodo](https://zenodo.org/badge/12345.svg)](https://zenodo.org/badge/latestdoi/12345)  
 
 ## Description
 
-Genome-scale metabolic reconstruction of _Lipomyces starkeyi_.
+This repository contains the current consensus genome-scale metabolic model of _Lipomyces starkeyi_ NRRL Y-11557, named **lista-GEM**. The model distributed on this GitHub repository is continuously updated, with the latest releases available [here](https://github.com/LabFisUFV/lista-GEM/releases). To get access to the model associated to the Almeida et al. (2023) publication, use lista-GEM 1.0.0.
 
 ## Citation
 
@@ -24,7 +24,7 @@ Genome-scale metabolic reconstruction of _Lipomyces starkeyi_.
 **Genome ID:** [insdc.gca:GCA_018804115.1](https://identifiers.org/insdc.gca:GCA_018804115.1)   
 **Metabolic system:** general metabolism   
 **Strain:** NRRL Y-11557   
-**Condition:** aerobic; glucose-limited; defined media   
+**Condition:** aerobic; defined media   
 
 
 ## Installation
@@ -44,7 +44,25 @@ If you want to use the model for your own model simulations, you can use **any s
 * Python-based
   * [cobrapy](https://github.com/opencobra/cobrapy)  
 
-Please see the installation and usage instructions for each software package.
+***RAVEN Toolbox***
+```matlab
+model = importModel('lista-GEM.xml')
+exportModel(model, 'lista-GEM.xml')
+```
+
+***cobrapy***
+```python
+import cobra
+model = cobra.io.read_sbml_model('lista-GEM.xml')
+cobra.io.write_sbml_model(model, 'lista-GEM.xml')
+```
+
+***COBRA Toolbox*** \*
+```matlab
+model = readCbModel('lista-GEM.xml')
+writeCbModel(model, 'lista-GEM.xml')
+```
+\* note that some annotation might be lost when exporting the model from COBRA Toolbox.
 
 ## Contributing
 

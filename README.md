@@ -14,17 +14,17 @@ Genome-scale metabolic reconstruction of _Lipomyces starkeyi_.
 
 ## Keywords
 
-**Utilisation:** experimental data reconstruction; multi-omics integrative analysis;, _in silico_ strain design; model template
-**Field:** metabolic-network reconstruction
-**Type of model:** reconstruction; curated
-**Model source:** [iYali](http://doi.org/10.1038/npjsba.2016.5) and [rhto-GEM](http://doi.org/10.1002/bit.27162)
-**Omic source:** genomics 
-**Taxonomic name:** _Lipomyces starkeyi_ 
-**Taxonomy ID:** [taxonomy:675824](https://identifiers.org/taxonomy:675824)
-**Genome ID:** [insdc.gca::GCA_018804115.1](https://identifiers.org/insdc.gca:GCA_018804115.1)
-**Metabolic system:** general metabolism
-**Strain:** NRRL Y-11557
-**Condition:** aerobic; glucose-limited; defined media
+**Utilisation:** experimental data reconstruction; multi-omics integrative analysis;, _in silico_ strain design; model template   
+**Field:** metabolic-network reconstruction   
+**Type of model:** reconstruction; curated   
+**Model source:** [iYali](http://doi.org/10.1038/npjsba.2016.5) and [rhto-GEM](http://doi.org/10.1002/bit.27162)   
+**Omic source:** genomics  
+**Taxonomic name:** _Lipomyces starkeyi_   
+**Taxonomy ID:** [taxonomy:675824](https://identifiers.org/taxonomy:675824)   
+**Genome ID:** [insdc.gca::GCA_018804115.1](https://identifiers.org/insdc.gca:GCA_018804115.1)   
+**Metabolic system:** general metabolism   
+**Strain:** NRRL Y-11557   
+**Condition:** aerobic; glucose-limited; defined media   
 
 
 ## Installation

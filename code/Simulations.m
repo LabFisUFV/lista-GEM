@@ -125,7 +125,7 @@ printFluxes(model_CC, solution, true);
 %% Surface substrate vs. oxygen for growth
 %Minimal media 
 
-load('C:\Users\dudul\OneDrive\Documentos_UFV\LABFIS\Lipomyces\GEM-Lipomyces\model\mat\lista-GEM.mat')
+load('../model/mat/lista-GEM.mat')
 
 model.annotation.defaultLB    = -1000; % Default lower bound
 model.annotation.defaultUB    = +1000; % Default upper bound
@@ -227,7 +227,7 @@ surfl(o,s,growthRates) %3D plot
 %% Surface substrate vs.oxygen for TAG production
 % Minimal media 
 
-load('C:\Users\dudul\OneDrive\Documentos_UFV\LABFIS\Lipomyces\GEM-Lipomyces\model\mat\lista-GEM.mat')
+load('../model/mat/lista-GEM.mat')
 
 idx = getIndexes(model, {'triglyceride (1-16:0, 2-18:1, 3-18:1)[erm]', ...
     'triglyceride (1-16:0, 2-18:1, 3-18:1)[lp]'}, 'metcomps');
@@ -322,7 +322,7 @@ surfl(o,s,growthRates) %3D plot
 %Fixado fonte de carbono (-3)
 %Minimal media 
 
-load('C:\Users\dudul\OneDrive\Documentos_UFV\LABFIS\Lipomyces\GEM-Lipomyces\model\mat\lista-GEM.mat')
+load('../model/mat/lista-GEM.mat')
 
 model.annotation.defaultLB    = -1000; % Default lower bound
 model.annotation.defaultUB    = +1000; % Default upper bound
@@ -424,7 +424,7 @@ surfl(o,s,growthRates) %3D plot
 %% Surface oxygen vs. nitrogen for TAG production
 % Minimal media 
 
-load('C:\Users\dudul\OneDrive\Documentos_UFV\LABFIS\Lipomyces\GEM-Lipomyces\model\mat\lista-GEM.mat')
+load('../model/mat/lista-GEM.mat')
 
 idx = getIndexes(model, {'triglyceride (1-16:0, 2-18:1, 3-18:1)[erm]', ...
     'triglyceride (1-16:0, 2-18:1, 3-18:1)[lp]'}, 'metcomps');
@@ -522,7 +522,7 @@ surfl(o,s,growthRates) %3D plot
 
 %clear;clc;
 
-load('C:\Users\dudul\OneDrive\Documentos_UFV\LABFIS\Lipomyces\GEM-Lipomyces\model\mat\lista-GEM.mat')
+load('../model/mat/lista-GEM.mat')
 
 model_tmp = model
 % Parameters for simulating batch growth in minimal medium
@@ -710,7 +710,7 @@ exUp = [modelRef.rxns(exUp(:,1)),modelRef.rxnNames(exUp(:,1)),num2cell(exUp)];
 %    but could be lower if two-fold did not allow growth.
 % 9: Maximum of row 5 and 7, to sort the most promising reactions.
 
-fid = fopen('results/eMOMA_glycerol_noSterolExch.tsv','w');
+fid = fopen('../data/results/eMOMA_glycerol_noSterolExch.tsv','w');
 fprintf(fid, '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n',["rxnID" "rxnName" "idx" ...
     "GR_KO" "EX_KO" "GR_OE" "EX_OE" "OEfactor" "EXmax"]);
 for j=1:length(exUp)
@@ -729,7 +729,7 @@ fclose(fid);
 
 % Minimal media 
 
-load('C:\Users\dudul\OneDrive\Documentos_UFV\LABFIS\Lipomyces\GEM-Lipomyces\model\mat\lista-GEM.mat')
+load('../model/mat/lista-GEM.mat')
 
 % Parameters for simulating batch growth in minimal medium
 exchangeRxns = model.rxns(endsWith(model.rxnNames,'exchange'));
@@ -786,7 +786,7 @@ target  = find(sum(target,2) & geneAssoc);
 [~,I]=sort(sum(slope(target,:),2,'omitnan'),'descend');
 out     = [num2cell(slope(target(I),:)), model.rxnNames(target(I)), model.grRules(target(I))];
 
-fid = fopen('results/fseof_TAG_glu_xyl_gly.csv','w');
+fid = fopen('/data/results/fseof_TAG_glu_xyl_gly.csv','w');
 fprintf(fid,'%s\t%s\t%s\t%s\t%s\n',["glu_TAG" "xyl_TAG" "gly_TAG" ...
     "rxnName" "grRule"]);
 for j=1:length(I)

@@ -21,7 +21,7 @@ Genome-scale metabolic reconstruction of _Lipomyces starkeyi_.
 **Omic source:** genomics  
 **Taxonomic name:** _Lipomyces starkeyi_   
 **Taxonomy ID:** [taxonomy:675824](https://identifiers.org/taxonomy:675824)   
-**Genome ID:** [insdc.gca::GCA_018804115.1](https://identifiers.org/insdc.gca:GCA_018804115.1)   
+**Genome ID:** [insdc.gca:GCA_018804115.1](https://identifiers.org/insdc.gca:GCA_018804115.1)   
 **Metabolic system:** general metabolism   
 **Strain:** NRRL Y-11557   
 **Condition:** aerobic; glucose-limited; defined media   

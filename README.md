@@ -5,7 +5,7 @@
 
 ## Description
 
-This repository contains the current consensus genome-scale metabolic model of _Lipomyces starkeyi_ NRRL Y-11557, named **lista-GEM**. The model distributed on this GitHub repository is continuously updated, with the latest releases available [here](https://github.com/LabFisUFV/lista-GEM/releases). To get access to the model associated to the Almeida et al. (2023) publication, use lista-GEM 1.0.0.
+This repository contains the current genome-scale metabolic reconstruction of _Lipomyces starkeyi_ NRRL Y-11557, named **lista-GEM**. The model distributed on this GitHub repository is continuously updated, with the latest releases available [here](https://github.com/LabFisUFV/lista-GEM/releases). To get access to the model associated to the Almeida et al. (2023) publication, use lista-GEM 1.0.0.
 
 ## Citation
 

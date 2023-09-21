@@ -1,7 +1,7 @@
 # lista-GEM: Genome-scale metabolic reconstruction of _Lipomyces starkeyi_
 
 [![Version](https://badge.fury.io/gh/LabFisUFV%2Flista-GEM.svg)](https://badge.fury.io/gh/LabFisUFV/lista-GEM)  
-[![Zenodo](https://zenodo.org/badge/12345.svg)](https://zenodo.org/badge/latestdoi/12345)  
+[![Zenodo](https://zenodo.org/badge/8367982.svg)](https://zenodo.org/badge/latestdoi/8367982)  
 
 ## Description
 

@@ -10,7 +10,7 @@ This repository contains the current genome-scale metabolic reconstruction of _L
 ## Citation
 
 * If you use lista-GEM please cite the preprint:
-  > Almeida et al. _lista-GEM: the genome-scale metabolic reconstruction of Lipomyces starkeyi._ bioRxiv (2023). [DOI pending](https://doi.org/10.xxxx/s12345-123-12345-1)
+  > Almeida et al. _lista-GEM: the genome-scale metabolic reconstruction of Lipomyces starkeyi._ bioRxiv (2023). [DOI: 10.1101/2023.09.25.559328](https://doi.org/10.1101/2023.09.25.559328)
 
 ## Keywords
 
